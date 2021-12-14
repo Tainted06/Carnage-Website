@@ -1,113 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Carnage - A Multipurpose Discord Bot</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="carnage-global.css">
-      <link rel="stylesheet" href="carnage-landing.css">
-      <link rel="author" href="humans.txt">
-      <link rel="icon" type="image/png" href="logo.png"/>
-      <link rel=”canonical” href="https://www.carnagebot.xyz">
-      <meta property="og:type" content="website">
-      <meta property="og:site_name" content="https://CarnageBot.xyz">
-      <meta property="og:title" content="Carnage Bot">
-      <meta property="og:description" content="A multipurpose discord bot with some commands right now and a lot more to come!">
-      <meta property="og:image" content="https://github.com/Tainted06/Carnage-Website/blob/main/logo.png?raw=true">
-  </head>
-  <body background="background.jpg">
-    <nav>
-      <div class="logo"></div>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="https://discord.com/oauth2/authorize?client_id=912680688384372826&scope=bot&permissions=8" class="link link--dark"><i class="fa fa-plus"></i> Invite Bot</a></li>
-        <li class="menu__item"><a href="https://discord.gg/8Wr7bsBrVU" class="link link--dark"><i class="fa fa-comment"></i> Discord Support Server</a></li>
-        <li class="menu__item"><a href="commands.html" class="link link--dark"><i class="fa fa-book"></i> Commands</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero__title">Carnage</h1>
-      <p class="hero__description">A Multipurpose Discord Bot</p>
-    </div>
-    <div class="hero__terminal">
-      <pre>
-        <img class="shell-session demo" src="logo.png" width="100%">
-      </pre>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="wrapper">
-      <div class="feature">
-        <div class="feature__item">
-          <h3 class="section__title">24/7 Uptime</h3>
-          <p>The bot is hosted on servers that are maintained 24/7, the maximum downtime is about 15 seconds when updating the bot.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Lots of Commands</h3>
-          <p>Lots of commands ranging from fun to moderation commands.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Bright Future</h3>
-          <p>I have plans to add a lot more commands into the bot, including crypto and a lot more!</p>
-        </div>
-        <!-- <div class="feature__item">
-          <h3 class="section__title">Configuration</h3>
-          <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file. Never need to redo the setting every single time jotting down a note.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Highlightings</h3>
-          <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files fast.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Keybindings</h3>
-          <p>You can expect common keybindings for scribbler. Customize <span class="code code--inline">bindings.json</span> for your own liking! </p>
-        </div> -->
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="changelog">
-      <div class="wrapper">
-        <h3 class="section__title">Contact</h3>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">Tainted</h4>
-            <small class="changelog__date">Head Developer</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Discord: Tainted#0069</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">Typical</h4>
-            <small class="changelog__date">Co Developer</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Discord: Typical#2953</li>
-            </ul>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="changelog__callout">
-          <a href="https://discord.com/oauth2/authorize?client_id=912680688384372826&scope=bot&permissions=8s" class="button--primary">Invite Bot</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">Discord bot made by <a href="https://github.com/Tainted06" target="_blank" class="link link--light">Tainted</a> and <a href="https://github.com/Omar-M-Z" target="_blank" class="link link--light">Typical</a>.<br><br>Website template by <a href="https://github.com/amiechen/codrops-scribbler" target="_blank" class="link link--light">Codrops</a>. </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="carnage.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Carnage - A Multipurpose Discord Bot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./img/logo-circle.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.main {
+	height: 50rem;
+  }
+  
+</style>
+<body class="on">
+	<div class="loading" id="loading-box">
+		<div class="loading-item"><div class="loading-progress"></div></div>
+	</div>
+
+	<main class="main">
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-nav">
+					<div class="navbar-brand">
+						<span class="navbar-brand-txt"><a class="txt-bold type-1" href="https://carnagebot.xyz">Carnage Bot</a></span>
+					</div>
+
+					<span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+					<div class="navs" id="navs">
+						<div class="navs-item notbtn"><a href="https://carnagebot.xyz/commands" class="txt-uppercase">Commands</a></div>
+						<div class="navs-item notbtn"><a href="https://discord.gg/8Wr7bsBrVU" class="txt-uppercase">Support Server</a></div>
+						<div class="navs-item"><a href="https://discord.com/oauth2/authorize?client_id=912680688384372826&scope=bot&permissions=8"><button class="btn txt-uppercase shadow-sm">Invite</button></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="jumbotron-items">
+					<div class="jumbotron-item">
+						<span class="jumbotron-t">Carnage Bot</span>
+						<p class="jumbotron-d">Nothing short of the best multipurpose discord bot with over 25 commands and amazing support for all of your questions</p>
+						<div class="jumbotron-buttons">
+							<button class="btn" onclick="location.href='https\:\/\/carnagebot.xyz/commands'">Commands</button>
+							<button class="btn blue" onclick="location.href='https\:\/\/discord.com/oauth2/authorize?client_id=912680688384372826&scope=bot&permissions=8'">Invite</button>
+						</div>
+					</div>
+					<div class="jumbotron-item">
+						<img src="./img/logo-circle.png" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="scroll-down"><i class="fas fa-arrow-down"></i></span>
+	</main>
+	<div class="features-box">
+		<h1 class="features-t" id="features">The finest features</h1>
+		<div class="container">
+			<div class="features">
+				<div class="feature">
+					<img class="feature-img" src="./img/feature1.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">Lots of Commands</h2>
+						<p class="feature-info-d">Over 25 commands from tons of diffrent groups all together in one discord bot with more commands being added all the time! You can also suggest a command idea and it may get added to the bot :) (>suggest *suggestion*) </p>
+					</div>
+				</div>
+				<div class="feature">
+					<img class="feature-img" src="./img/feature2.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">Amazing Support</h2>
+						<p class="feature-info-d">The bot is hosted 24/7 on reliable servers and has amazing support, any bug or problem you find or encounter will be fixed as soon as humanly possible!</p>
+					</div>
+				</div>
+				<div class="feature">
+					<img class="feature-img" src="./img/feature3.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">Advanced Genshin Impact Commands</h2>
+						<p class="feature-info-d">Explore Teyvat right from your own discord server! View information/stats on lots of elements of Genshin Impact including characters, domains, nations, elements and a lot more. (This feature is currently a work is progress, it will be released shortly)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="services-box">
+		<h1 class="services-t" id="services">Current Stats</h1>
+		<div class="container">
+			<div class="services">
+				<div class="service">
+					<span id="servercount"><i class="fas fa-server"></i> 100.000 servers</span>
+				</div>
+				<div class="service">
+					<span id="usercount"><i class="fas fa-users"></i> 100.000.000 users</span>
+				</div>
+				<div class="service">
+					<span id="commandcount"><i class="fas fa-code"></i> 190k total commands</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-items">
+				<div class="footer-item">
+					<span>Devs</span>
+					<ul class="footer-ul">
+						<li><a>Tainted#0069 (Owner/Head Developer)</a></li>
+						<li><a>Typical (Retired Dev)</a></li>
+					</ul>
+				</div>				
+				<div class="footer-item">
+					<span>Links</span>
+					<ul class="footer-ul">
+						<li><a href="https://discord.gg/8Wr7bsBrVU">Discord</a></li>
+						<li><a href="https://top.gg/bot/912680688384372826">top.gg</a></li>
+						<li><a href="https://statcord.com/bot/912680688384372826">StatCord Dashboard</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
 </html>
