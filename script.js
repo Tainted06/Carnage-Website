@@ -31,5 +31,5 @@ fetch('https://api.statcord.com/v3/912680688384372826')
 .then(data => {
   document.getElementById("servercount").innerHTML = " " + String(data.data[0].servers) + " Servers";
   document.getElementById("usercount").innerHTML = " " + String(data.data[0].users) + " Users";
-  document.getElementById("commandcount").innerHTML = " " + String(data.data[0].commands) + " Commands Today";
+  document.getElementById("commandcount").innerHTML = " " + String(data.data[0].custom1) + " Votes";
 })
